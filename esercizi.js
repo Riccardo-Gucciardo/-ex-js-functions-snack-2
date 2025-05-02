@@ -21,3 +21,12 @@ function quadrato(numero) { return numero * numero; }
 
 // Test della funzione
 // console.log(quadrato(4));
+
+const somma = (a, b) => a + b;
+const moltiplica = (a, b) => a * b;
+
+const eseguiOperazione = (a, b, operazione) => operazione(a, b);
+
+
+console.log(eseguiOperazione(5, 8, somma));
+console.log(eseguiOperazione(5, 8, moltiplica));
