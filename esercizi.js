@@ -78,3 +78,14 @@ const intervallo = creaContatore(1000)
 // intervallo()
 
 // -----------Snack 7----------------
+
+function eseguiEferma(messaggio,tempoAvvio,tempoStop){
+    const intervallo = setInterval(() => console.log(messaggio),tempoAvvio);
+
+    setTimeout(() => clearInterval(intervallo),tempoStop)
+
+}
+
+eseguiEferma("adios",1000,5000)
+
+// -----------Snack 8----------------
