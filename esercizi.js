@@ -89,3 +89,16 @@ function eseguiEferma(messaggio,tempoAvvio,tempoStop){
 eseguiEferma("adios",1000,5000)
 
 // -----------Snack 8----------------
+
+function contoAllaRovescia(tempoStart){
+    let numeri = tempoStart
+    const countdown = setInterval(()=> {
+        if(numeri>0){console.log(numeri);numeri --,tempoStart}
+        else{console.log("fine");clearInterval(countdown)    
+        
+    }
+},1000)
+
+}
+
+contoAllaRovescia(10)
