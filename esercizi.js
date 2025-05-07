@@ -37,3 +37,14 @@ console.log(eseguiOperazione(5, 8, somma));
 console.log(eseguiOperazione(5, 8, moltiplica));
 
 // -----------Snack 4----------------
+
+
+function CreaTimer(tempo){
+    return function(){
+        setTimeout(() => console.log("tempo scaduto"),tempo)
+    }
+}
+
+const timer = CreaTimer(5000)
+
+timer()
