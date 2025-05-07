@@ -138,7 +138,7 @@ const stampa = () => console.log("Eseguito!");
 
 const throttlerStampa = creaThrottler(stampa, 2000);
 
-throttledStampa(); // Eseguita subito
-throttledStampa(); // Ignorata
-throttledStampa(); // Ignorata
+throttlerStampa(); // Eseguita subito
+throttlerStampa(); // Ignorata
+throttlerStampa(); // Ignorata
 setTimeout(() => throttlerStampa(), 2100); // Eseguita dopo ~2.1s
