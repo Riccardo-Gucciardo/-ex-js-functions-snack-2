@@ -48,3 +48,33 @@ function CreaTimer(tempo){
 const timer = CreaTimer(5000)
 
 timer()
+
+// -----------Snack 5----------------
+
+function messaggioLoop(){
+    setInterval(function(){
+        console.log("ciao")
+    },3000)
+}
+
+// messaggioLoop()
+
+// -----------Snack 6----------------
+
+
+function creaContatore(interval){
+    let contatore = 0
+    return function(){
+        setInterval(()=>{
+            contatore ++
+            console.log(contatore);
+            
+        },interval)
+    }
+}
+
+const intervallo = creaContatore(1000)
+
+// intervallo()
+
+// -----------Snack 7----------------
