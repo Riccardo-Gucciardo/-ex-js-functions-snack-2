@@ -136,7 +136,7 @@ function creaThrottler(operazione, limite) {
 
 const stampa = () => console.log("Eseguito!");
 
-const throttledStampa = creaThrottler(stampa, 2000);
+const throttlerStampa = creaThrottler(stampa, 2000);
 
 throttledStampa(); // Eseguita subito
 throttledStampa(); // Ignorata
