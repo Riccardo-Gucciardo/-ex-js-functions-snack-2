@@ -141,4 +141,4 @@ const throttlerStampa = creaThrottler(stampa, 2000);
 throttledStampa(); // Eseguita subito
 throttledStampa(); // Ignorata
 throttledStampa(); // Ignorata
-setTimeout(() => throttledStampa(), 2100); // Eseguita dopo ~2.1s
+setTimeout(() => throttlerStampa(), 2100); // Eseguita dopo ~2.1s
