@@ -33,8 +33,8 @@ const moltiplica = (a, b) => a * b;
 const eseguiOperazione = (a, b, operazione) => operazione(a, b);
 
 
-console.log(eseguiOperazione(5, 8, somma));
-console.log(eseguiOperazione(5, 8, moltiplica));
+// console.log(eseguiOperazione(5, 8, somma));
+// console.log(eseguiOperazione(5, 8, moltiplica));
 
 // -----------Snack 4----------------
 
@@ -47,7 +47,7 @@ function CreaTimer(tempo){
 
 const timer = CreaTimer(5000)
 
-timer()
+// timer()
 
 // -----------Snack 5----------------
 
@@ -73,7 +73,7 @@ function creaContatore(interval){
     }
 }
 
-const intervallo = creaContatore(1000)
+// const intervallo = creaContatore(1000)
 
 // intervallo()
 
@@ -86,7 +86,7 @@ function eseguiEferma(messaggio,tempoAvvio,tempoStop){
 
 }
 
-eseguiEferma("adios",1000,5000)
+// eseguiEferma("adios",1000,5000)
 
 // -----------Snack 8----------------
 
@@ -101,4 +101,44 @@ function contoAllaRovescia(tempoStart){
 
 }
 
-contoAllaRovescia(10)
+// contoAllaRovescia(10)
+
+// -----------Snack 9----------------
+
+function sequenzaOperazioni(operazioni,tempo){
+    operazioni.forEach((operazione,indice) => { setTimeout(operazione,tempo * (indice+1))
+        
+    });
+}
+
+const op1 = () => console.log("Operazione 1");
+const op2 = () => console.log("Operazione 2");
+const op3 = () => console.log("Operazione 3");
+const operazioni = [op1, op2, op3];
+
+// sequenzaOperazioni(operazioni, 1000);
+
+// -----------Snack 10----------------
+
+function creaThrottler(operazione, limite) {
+    let bloccato = false;
+    
+    return function() {
+        if (!bloccato) {
+            operazione();
+            bloccato = true;
+            setTimeout(() => {
+                bloccato = false;
+            }, limite);
+        }
+    };
+}
+
+const stampa = () => console.log("Eseguito!");
+
+const throttledStampa = creaThrottler(stampa, 2000);
+
+throttledStampa(); // Eseguita subito
+throttledStampa(); // Ignorata
+throttledStampa(); // Ignorata
+setTimeout(() => throttledStampa(), 2100); // Eseguita dopo ~2.1s
