@@ -149,7 +149,7 @@ const throttlerStampa = creaThrottler(stampa, 2000);
 // ----------code question 1-------- 
 
 // -L'assegnazione secondBurger = hamburger non crea un nuovo oggetto,
-//  ma copia il riferimento allo stesso oggetto.
+//  ma copia il riferimento allo stesso oggetto.(ne crea solo uno )
 
 // -Le modifiche a name e weight alterano le proprietà dell'oggetto
 
