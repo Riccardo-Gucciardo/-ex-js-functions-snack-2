@@ -138,7 +138,37 @@ const stampa = () => console.log("Eseguito!");
 
 const throttlerStampa = creaThrottler(stampa, 2000);
 
-throttlerStampa(); // Eseguita subito
-throttlerStampa(); // Ignorata
-throttlerStampa(); // Ignorata
-setTimeout(() => throttlerStampa(), 2100); // Eseguita dopo ~2.1s
+// throttlerStampa(); // Eseguita subito
+// throttlerStampa(); // Ignorata
+// throttlerStampa(); // Ignorata
+// setTimeout(() => throttlerStampa(), 2100); // Eseguita dopo ~2.1s
+
+
+// -------------ex - snack oggetti------------------
+
+// ----------code question 1-------- 
+
+// -L'assegnazione secondBurger = hamburger non crea un nuovo oggetto,
+//  ma copia il riferimento allo stesso oggetto.
+
+// -Le modifiche a name e weight alterano le proprietà dell'oggetto
+
+// ----------code question 2-------- 
+
+// -secondBurger.ingredients e hamburger.ingredients 
+// si riferiscono allo stesso array in memoria,
+// modificare secondBurger.ingredients[0] cambia il primo elemento dell'array
+// quindi in console stamperà salad per entrambi 
+
+// gli oggetti creati in memoria sono :
+// L'oggetto hamburger.
+// L'array ingredients.
+// L'oggetto secondBurger.
+
+// ----------code question 3-------- 
+
+// sono tre oggetti per ogni Hamburger quindi 9 
+// (hamburger,maker,resturant) (secondBurger,maker,ecc...)
+
+// ----------code question 3-------- 
+
