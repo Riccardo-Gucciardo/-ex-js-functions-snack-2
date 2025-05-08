@@ -189,7 +189,7 @@ const throttlerStampa = creaThrottler(stampa, 2000);
 // ----------code question 6-------- 
 
 // -Applicando lo spread operator a ogni livello (chef, restaurant, address) cosi facendo
-//  a differenza dello structuredClone() riusciamo a mantenere 
+//  a differenza dello structuredClone() riusciamo a mantenere le funzioni
 //  (makeBurger, welcomeClient, showAddress) copiate come riferimenti, 
 //  rimanendo eseguibili
 
