@@ -156,19 +156,42 @@ const throttlerStampa = creaThrottler(stampa, 2000);
 // ----------code question 2-------- 
 
 // -secondBurger.ingredients e hamburger.ingredients 
-// si riferiscono allo stesso array in memoria,
-// modificare secondBurger.ingredients[0] cambia il primo elemento dell'array
-// quindi in console stamperà salad per entrambi 
+//  si riferiscono allo stesso array in memoria,
+//  modificare secondBurger.ingredients[0] cambia il primo elemento dell'array
+//  quindi in console stamperà salad per entrambi 
 
-// gli oggetti creati in memoria sono :
-// L'oggetto hamburger.
-// L'array ingredients.
-// L'oggetto secondBurger.
+// -gli oggetti creati in memoria sono :
+//  L'oggetto hamburger.
+//  L'array ingredients.
+//  L'oggetto secondBurger.
 
 // ----------code question 3-------- 
 
 // sono tre oggetti per ogni Hamburger quindi 9 
 // (hamburger,maker,resturant) (secondBurger,maker,ecc...)
 
-// ----------code question 3-------- 
+// ----------code question 4-------- 
+
+// -
+
+// -structuredClone perchè crea una copia profonda, 
+//  duplicando correttamente l'oggetto annidato address
+//  e mantenendo openingDate come oggetto Date
+
+
+// ----------code question 5-------- 
+
+
+
+
+
+
+// ----------code question 6-------- 
+
+// -Applicando lo spread operator a ogni livello (chef, restaurant, address) cosi facendo
+//  a differenza dello structuredClone() riusciamo a mantenere 
+//  (makeBurger, welcomeClient, showAddress) copiate come riferimenti, 
+//  rimanendo eseguibili
+
+
 
